@@ -1,0 +1,10 @@
+def add_record():
+    print("Enter The Student Details\n")
+    name = input("Enter Name: ")
+    roll = input("Enter Roll Number: ")
+    cls = input("Enter Class: ")
+    fee = input("Enter Fees: ")
+    percentage = input("Enter The Percentage: ")
+    file = open("Record/student.txt","a")
+    file.write(name+"-"+roll+"-"+cls+"-"+fee+"-"+percentage+"\n")
+    file.close()
