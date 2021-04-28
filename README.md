@@ -1,10 +1,7 @@
 # 260253_MiniProject
 
 # Student Management System
-
-
 ![alt text](https://github.com/tareninayak9921/260253_MiniProject/blob/master/img/sms.png)
-
 Student Management System provides a simple interface for maintenance of student
 records. It can be used by educational institutes or colleges to maintain the records of students easily. The creation and
 management of accurate, up-to-date information regarding a student is critically important in the
