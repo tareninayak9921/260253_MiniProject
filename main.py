@@ -1,16 +1,20 @@
-# This is a sample Python script.
+import os
+z=1
+while(True):
+    print("\n 1. Add Record")
+    print("\n 2. Display All Record")
+    print("\n 3. Search Student Record By Name")
+    print("\n 4. Search Student Record By Roll No")
+    print("\n 5. Delete Student Record By Name")
+    print("\n 6. Update Student Record")
+    print("\n 7. Exit")
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    n=int(print(input("Enter Your Choice:  ")))
+    if(n==7):
+        break
+    elif(n==1):
+        print("Enter The Student Details\n")
+        name = input("Enter Name: ")
+        roll = input("Enter Roll Number: ")
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
