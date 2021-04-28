@@ -52,9 +52,9 @@ while True:
                 print("Percentage: ", arr[4])
                 flag = 1
                 break
-            if flag == 0:
-                print("\n Record Not Found!!!")
-            file.close()
+        if flag == 0:
+            print("\n Record Not Found!!!")
+        file.close()
     elif n == 4:
         search = input("Enter Student Roll No: ")
         file = open("Record/student.txt", "r")
@@ -74,9 +74,9 @@ while True:
                 print("Percentage: ", arr[4])
                 flag = 1
                 break
-            if flag == 0:
-                print("\n Record Not Found!!!")
-            file.close()
+        if flag == 0:
+            print("\n Record Not Found!!!")
+        file.close()
     elif n == 5:
         search = input("Enter Student Name: ")
         file1 = open("Record/student.txt", "r")
@@ -86,19 +86,21 @@ while True:
             content = file1.readline()
             length = len(content)
             if length == 0:
-                arr = content.split("-")
-                if arr[0] != search:
-                    file2.write(content)
-                if arr[0] == search:
-                    flag = 1
-            file1.close()
-            file2.close()
-            if flag == 1:
-                print("Record Deleted Successfully!!!")
-                os.remove("Record/student.txt")
-                os.rename("Record/temp.txt","Record/student.txt")
-            elif flag == 0:
-                print("Deletion Unsuccessful As Record Not Found!!!")
+                break
+            arr = content.split("-")
+            if arr[0] != search:
+                file2.write(content)
+            if arr[0] == search:
+                flag = 1
+        file1.close()
+        file2.close()
+        if flag == 1:
+            print("Record Deleted Successfully!!!")
+            os.remove("Record/student.txt")
+            os.rename("Record/temp.txt","Record/student.txt")
+        elif flag == 0:
+            print("Deletion Uns2uccessful As Record Not Found!!!")
+
 
 
 
